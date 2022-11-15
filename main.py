@@ -8,7 +8,7 @@ desiredtip = input("How much tip would you like to give? 10, 12, or 15 percent?\
 
 # Calculate total bill with tips
 desiredtip_multiple = int(desiredtip) / 100
-total_bill_with_tips = int(total_bill) * (1 + desiredtip_multiple)
+total_bill_with_tips = float(total_bill) * (1 + desiredtip_multiple)
 
 # Calculate per pax amount owed
 total_pax = input("How many people to split the bill?\n")
