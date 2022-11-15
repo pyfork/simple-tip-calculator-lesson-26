@@ -13,9 +13,10 @@ total_bill_with_tips = float(total_bill) * (1 + desiredtip_multiple)
 # Calculate per pax amount owed
 total_pax = input("How many people to split the bill?\n")
 per_pax_total = round((total_bill_with_tips / int(total_pax)),2)
+formatted_per_pax_total = "{:.2f}".format(per_pax_total)
 
 # Show what each pax owes
-print(f"Each person should pay: \n${per_pax_total}")
+print(f"Each person should pay: \n${formatted_per_pax_total}")
 
 # Example Input
 # ```
